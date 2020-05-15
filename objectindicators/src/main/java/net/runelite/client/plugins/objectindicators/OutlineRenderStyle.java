@@ -29,6 +29,7 @@ public enum OutlineRenderStyle
 {
 	THIN_OUTLINE,
 	NORMAL_OUTLINE,
+	FILL,
 	THIN_GLOW,
 	GLOW
 }
