@@ -148,6 +148,13 @@ class ObjectIndicatorsOverlay extends Overlay
 						OverlayUtil.renderHoverableArea(graphics, object.getClickbox(), client.getMouseCanvasPosition(), TRANSPARENT, objectColor, objectColor.darker());
 					}
 					break;
+				case FILL:
+					Shape clickbox = object.getClickbox();
+					if (clickbox != null)
+					{
+						OverlayUtil.renderHoverableArea(graphics, object.getClickbox(), client.getMouseCanvasPosition(), objectColor, objectColor, objectColor.darker());
+					}
+					break;
 			}
 		}
 
